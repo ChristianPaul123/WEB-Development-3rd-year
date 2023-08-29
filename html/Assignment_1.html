@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Self</title>
+
+   <!-- Font awesome cdn link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" href="Images/Icon_pic.png" type="image/icon type">
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  line-height: 1.5;
+}
+
+
+html{
+  font-size: 62.5%;
+  height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior:smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.img-container{
+  display: flex;
+  margin-left: 1.5rem;
+  padding: .5rem 0rem 2rem 0rem;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 4rem;
+
+}
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: 50% 50%;  
+  transition: transform 1s, filter .5s ease-out;
+  border-radius: inherit;
+  box-shadow: 1rem 0.7rem 7px black;
+}
+
+.img-container:hover img{
+  transform: scale(1.2);
+}
+
+p {
+ text-align: center;
+ font-size: large;
+}
+
+#text-title{
+color: rgb(109, 114, 114);
+font-weight: 500;
+font-size: 4rem;
+}
+
+#text{
+  color: rgb(160, 162, 162);
+font-weight: 200;
+font-size: 1.9rem;
+word-wrap: normal;
+}
+
+@media screen and (max-width: 320px) {
+
+  html {
+    font: size 30%;
+  }
+
+  .img-container {
+  display: flex;
+  margin-left: 2.5rem;
+  padding: .5rem 0rem 2rem 0rem;
+  width: 27rem;
+  height: 25rem;
+  border-radius: 4rem;
+}
+
+}
+
+  </style>
+</head>
+<body>
+  <div class="img-container">
+      <img src="Images/Home-pic.webp" alt="">
+  </div>
+  <p id="text-title">Hello</p>
+  <p id="text">My Name is Christian Paul A. Espares</p>
+
+  
+</body>
+</html>
